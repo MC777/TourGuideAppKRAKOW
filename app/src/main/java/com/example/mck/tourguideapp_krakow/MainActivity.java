@@ -1,5 +1,7 @@
 package com.example.mck.tourguideapp_krakow;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -79,15 +81,19 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        if (id == R.id.nav_first_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new FirstFragment()).commit();
+        } else if (id == R.id.nav_second_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new SecondFragment()).commit();
+        } else if (id == R.id.nav_third_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new ThirdFragment()).commit();
+        } else if (id == R.id.nav_fourth_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new FourthFragment()).commit();
+        } else if (id == R.id.nav_fifth_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new FifthFragment()).commit();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
