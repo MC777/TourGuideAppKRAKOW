@@ -1,6 +1,5 @@
 package com.example.mck.tourguideapp_krakow;
 
-import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -84,16 +83,16 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getFragmentManager();
 
 
-        if (id == R.id.nav_first_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new FirstFragment()).commit();
-        } else if (id == R.id.nav_second_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new SecondFragment()).commit();
-        } else if (id == R.id.nav_third_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new ThirdFragment()).commit();
-        } else if (id == R.id.nav_fourth_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new FourthFragment()).commit();
-        } else if (id == R.id.nav_fifth_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new FifthFragment()).commit();
+        if (id == R.id.nav_info_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new InfoFragment()).commit();
+        } else if (id == R.id.nav_famous_places) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new FamousPlacesFragment()).commit();
+        } else if (id == R.id.nav_restaurants_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new RestaurantsFragment()).commit();
+        } else if (id == R.id.nav_hotels_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new HotelsFragment()).commit();
+        } else if (id == R.id.nav_events_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new EventsFragment()).commit();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

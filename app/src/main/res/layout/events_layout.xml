@@ -9,5 +9,5 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
-        android:text="FIRST LAYOUT" />
+        android:text="EVENTS" />
 </RelativeLayout>

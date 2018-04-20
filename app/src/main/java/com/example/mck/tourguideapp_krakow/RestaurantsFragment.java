@@ -7,14 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FifthFragment extends Fragment {
+public class RestaurantsFragment extends Fragment {
 
     View myView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.fifth_layout,container,false);
+        myView = inflater.inflate(R.layout.restaurants_layout,container,false);
         return myView;
     }
 }
