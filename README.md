@@ -3,7 +3,7 @@ One of the project for Udacity (Google Challenge Scholarship: Android Basics)
 
 ## Description:
 This is a TourGuideAppKRAKOW application created for Udacity (Google Challenge Scholarship: Android Basics).
-Tour Gouide Application simulating standard tour guide application. The aim of that project was a practice with layouts structures.
+Tour Guide Application simulating standard tour guide application. The aim of that project was a practice with layouts structures.
 
 ## Screenshots:
 ![screenshot_1](https://user-images.githubusercontent.com/34196498/50045208-10947980-008f-11e9-9792-ef1249172e27.png)
